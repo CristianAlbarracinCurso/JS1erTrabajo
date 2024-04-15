@@ -1,0 +1,156 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+/*Estilo General*/
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555753;
+  background-color: azure;
+}
+
+/* Estilos de Titulos */
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2em;
+  color: #14130e;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  color: #14130e;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: #14130e;
+  font-weight: bold;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #14130e;
+  margin-top: 10;
+  text-align: justify;
+}
+
+section {
+  display: flex;
+  margin: 30px 20px;
+  font-family: Georgia;
+  font-size: small;
+  border: 2px solid #053e80;
+  font-style: italic;
+}
+section img {
+  border-radius: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.AjusteVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.AjusteVideo iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+}
+
+.error, .errorMax {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.errorMax {
+  border-width: 3px;
+}
+
+.Resaltar {
+  font-family: Georgia;
+  font-size: small;
+  border: 2px solid #053e80;
+  font-style: italic;
+}
+
+.ResaltarEspecial {
+  font-family: Georgia;
+  font-size: small;
+  border: 4px solid #ffffff;
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.TextoOrdenado {
+  display: flex;
+  margin: 20px;
+}
+
+.ImagenDerecha {
+  margin-right: 15px;
+  width: 350px;
+}
+
+.Texto {
+  margin: 20px;
+}
+
+@media (min-width: 1281px) {
+  .ContenedorGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 681px) and (max-width: 1280px) {
+  .ContenedorGrid {
+    grid-template-columns: 2;
+    gap: 30px;
+  }
+  .ContenedorGrid .NoticiaCuatro {
+    display: none;
+    grid-column: span 2;
+  }
+  .ContenedorGrid .NoticiaUno {
+    grid-column: span 2;
+  }
+  .ContenedorGrid .NoticiaDos {
+    grid-row: span 2;
+  }
+  .ContenedorGrid .NoticiaTres {
+    grid-row: span 2;
+  }
+}
+@media (max-width: 680px) {
+  .ContenedorGrid {
+    grid-template-columns: 1;
+    gap: 30px;
+  }
+  .ContenedorGrid .NoticiaCuatro {
+    grid-column: span 1;
+  }
+  .ContenedorGrid .NoticiaUno {
+    grid-column: span 1;
+  }
+  .ContenedorGrid .NoticiaDos {
+    grid-row: span 1;
+  }
+  .ContenedorGrid .NoticiaTres {
+    grid-row: span 1;
+  }}
